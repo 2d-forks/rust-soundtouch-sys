@@ -35,7 +35,7 @@ fn main() {
     }
 
     let bindings = builder
-        .whitelist_type("soundtouch::SoundTouch")
+        .allowlist_type("soundtouch::SoundTouch")
         .generate()
         .expect(&format!("generate {} bindings", pkg_name));
     let out_path =
